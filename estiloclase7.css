@@ -1,0 +1,146 @@
+
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+
+.caja1 {
+    grid-area: caja1;
+    background-color: yellow;
+    border: 1px solid black; 
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja2 {
+    grid-area: caja2;
+    background-color: red;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja3{
+    grid-area: caja3;
+    background-color: green;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+
+
+.caja4 {
+    grid-area: caja4;
+    background-color: rgb(62, 53, 116);
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja5 {
+    grid-area: caja5;
+    background-color: orange;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja6{
+    grid-area: caja6;
+    background-color: hotpink;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja7 {
+    grid-area: caja7;
+    background-color: violet;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja8 {
+    grid-area: caja8;
+    background-color: gray;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+.caja9 {
+    grid-area:caja9;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+}
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+                         "caja1 caja4 caja7"
+                         "caja2 caja5 caja8"
+                         "caja3 caja6 caja9";
+}
+    
+
+@media (max-width:320px)
+{
+.contenedor
+{
+    grid-template-areas: 
+                         "caja1" 
+                         "caja2" 
+                         "caja3";
+     
+}
+}
+
+@media (min-width:321px)
+{
+.contenedor
+{
+    grid-template-areas: 
+                         "caja1 caja4" 
+                         "caja2 caja5" 
+                         "caja3 caja6";
+     
+}
+}
+
+@media (min-width:768px)
+
+{
+.contenedor
+{
+    grid-template-areas: 
+                         "caja1 caja4 caja7"
+                         "caja2 caja5 caja8"
+                         "caja3 caja6 caja9"; 
+}
+}
+
+
+
+
+
+
